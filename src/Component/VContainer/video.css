@@ -1,0 +1,135 @@
+.v-wrapper {
+    font-family: poppins;
+}
+.v-container {
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.v-words {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+.v-spans {
+    padding: 0 5rem;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    color: var(--white);
+}
+.v-spans .v-n-span {
+    font-weight: 900;
+    font-size: 5rem;
+    position: relative;
+}
+.v-spans span:nth-child(1) .v-upper {
+    font-size: 1.3rem;
+    color: var(--crimson);
+    position: absolute;
+    top: 0.2rem;
+    right: 9.8rem;
+}
+.v-cont {
+    display: flex;
+    gap: 6rem;
+}
+.v-left {
+    width: 60%;
+    text-align: left;
+    margin-top: 2rem;
+}
+.v-left span:nth-child(1) {
+    font-weight: 400;
+    font-size: 1.2rem;
+
+}
+.v-right {
+    width: 40% ;
+    text-align: left;
+}
+.v-right h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--crimson);
+}
+.v-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.email {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.btn {
+    width: 10rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: 2px solid var(--white);
+    background: transparent;
+    color: var(--white);
+    border-radius: 5px;
+    transition: 0.5s ease-in;
+}
+.btn:hover {
+    background: var(--white);
+    color: var(--crimson);
+}
+.m {
+    font-family: 'Young Serif';
+}
+@media (max-width: 920px) {
+    .v-upper {
+        display: none;
+    }
+    .v-spans {
+        padding: 0 2rem;
+    }
+    .v-cont {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .v-left, .v-right {
+        width: 100%;
+    }
+    .v-spans .v-n-span {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    @media(max-width: 652px) {
+        .v-spans .v-n-span {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        @media (max-width: 477px){
+            .v-spans {
+                padding: 0 1rem;
+                margin-top: 4rem;
+                gap: 2rem;
+            }
+            .v-spans .v-n-span {
+                font-weight: 700;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

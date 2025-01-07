@@ -1,0 +1,113 @@
+.logo img {
+  width: 6rem;
+}
+.f-wrapper {
+  background: var(--black);
+  font-family: poppins;
+}
+.f-container {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.left .span {
+  color: var(--white);
+  opacity: 0.4;
+}
+.links {
+  display: flex;
+  gap: 1rem;
+}
+.links a {
+  padding: 0.5rem;
+  transition: 0.5 ease-in;
+  border-radius: 5px;
+  color: var(--crimson);
+}
+.links a:hover {
+  color: var(--black);
+  background: var(--crimson);
+}
+.right {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.right .head-span {
+  color: var(--white);
+}
+.catergory {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.cat-one {
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  opacity: 0.4;
+}
+hr {
+  opacity: 0.4;
+}
+.fo-span {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  color: var(--white);
+  padding: 5rem;
+}
+.fo-span span {
+  color: #686868;
+}
+.fo-span span span {
+  color: var(--crimson);
+  opacity: 1;
+}
+@media (max-width: 1024px) {
+  .f-container,
+  .fo-span {
+    padding: 5rem 3rem;
+  }
+  .left,
+  .right {
+    width: 28rem;
+  }
+  @media (max-width: 930px) {
+    .f-container {
+      padding: 5rem 2rem;
+      flex-direction: column;
+    }
+    .left,
+    .right {
+      width: 100%;
+    }
+    .fo-span {
+      padding: 0 2rem;
+    }
+    @media (max-width: 500px) {
+      .left .logo {
+        width: 9.2rem;
+      }
+      .head-span {
+        font-size: 1.5rem;
+      }
+      .f-container {
+      padding: 5rem 1rem;
+      }
+      .fo-span {
+        padding: 0 1rem;
+      }
+    }
+  }
+}
