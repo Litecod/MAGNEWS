@@ -12,7 +12,8 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files    
+# Editor directories and files   git remote add origin https://github.com/<Litecod>/<MAGNEWS>.git
+
 .vscode/*
 !.vscode/extensions.json
 .idea
